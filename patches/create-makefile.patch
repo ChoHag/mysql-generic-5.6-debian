@@ -1,0 +1,21 @@
+Install Oracle's tarball distribution of mysql to /opt/mysql-generic-<VERSION>.
+Index: mysql-generic-5.6.12/Makefile
+===================================================================
+--- /dev/null	1970-01-01 00:00:00.000000000 +0000
++++ mysql-generic-5.6.12/Makefile	2013-07-22 11:16:27.331480773 +0100
+@@ -0,0 +1,15 @@
++dirs    = bin lib share man include scripts support-files
++
++VERSION = $(shell bin/mysql_config --version)
++
++build:
++	cp COPYING debian/copyright
++
++install:
++	install -d "$(DESTDIR)/opt"
++	install -d "$(DESTDIR)/opt/mysql-generic-$(VERSION)"
++	cp -a $(dirs) "$(DESTDIR)/opt/mysql-generic-$(VERSION)"
++
++clean:
++	rm -f debian/copyright
++	rm -fr "$(DESTDIR)"

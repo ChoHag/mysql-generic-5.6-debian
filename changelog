@@ -1,0 +1,12 @@
+mysql-generic-5.6 (5.6.12-2) unstable; urgency=low
+
+  * Remove some of the stupid initialisation junk which the setup procedure
+    takes out straight away. By hand.
+
+ -- Matthew King <mking@dagilev.co.uk>  Thu, 25 Jul 2013 08:42:58 +0100
+
+mysql-generic-5.6 (5.6.12-1) unstable; urgency=low
+
+  * Package mysql 5.6.12 tarball from http://dev.mysql.com/downloads/mysql/
+
+ -- Matthew King <mking@dagilev.co.uk>  Mon, 22 Jul 2013 09:56:17 +0100

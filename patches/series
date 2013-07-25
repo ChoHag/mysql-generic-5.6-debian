@@ -1,0 +1,3 @@
+create-makefile.patch
+no-test-db.patch
+no-anon-or-dns.patch
